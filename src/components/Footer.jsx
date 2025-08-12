@@ -5,19 +5,42 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <img src="/LogotipoFML.jpg" alt="FML Trading" />
-          <p>Disciplina, dados e comunidade.</p>
+          <img 
+            src="/LogotipoFML.jpg" 
+            alt="FML Trading"
+            onError={(e) => {
+              console.warn('Failed to load footer logo:', e)
+              e.target.style.display = 'none'
+            }}
+          />
+          <div className="footer-brand-text">
+            <h4>FML Trading</h4>
+            <p>Disciplina, dados e comunidade.</p>
+          </div>
         </div>
         <nav className="footer-links">
-          <a href="#hero">Início</a>
-          <a href="#about">Quem somos</a>
-          <a href="#services">Serviços</a>
-          <a href="#results">Resultados</a>
-          <a href="#social">Canais</a>
+          <div className="footer-links-group">
+            <h5>Navegação</h5>
+            <a href="#hero">Início</a>
+            <a href="#about">Quem somos</a>
+            <a href="#services">Serviços</a>
+            <a href="#results">Resultados</a>
+            <a href="#social">Canais</a>
+          </div>
+          <div className="footer-links-group">
+            <h5>Contato</h5>
+            <a href="mailto:contato@fmltrading.com">contato@fmltrading.com</a>
+            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
         </nav>
       </div>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} FML Trading. Todos os direitos reservados.</p>
+        <div className="footer-disclaimer">
+          <p>
+            Todas as informações fornecidas nesta página web destinam-se exclusivamente para fins de estudo relacionados à negociação em mercados financeiros e não servem de forma alguma como recomendação específica de investimento, recomendação de negócios, análise de oportunidade de investimento ou recomendação geral semelhante sobre a negociação de instrumentos de investimentos. A negociação nos mercados financeiros é uma atividade de alto risco e é aconselhável não arriscar mais do que se pode perder.
+          </p>
+        </div>
       </div>
     </footer>
   )

@@ -49,6 +49,26 @@ export default function About() {
             </div>
           </Reveal>
         </div>
+        
+        {/* CTA adicional na seção About */}
+        <Reveal>
+          <div className="about-cta">
+            <h3>Pronto para Começar?</h3>
+            <p>Junte-se à nossa comunidade e transforme sua jornada no trading</p>
+            <div className="about-cta-buttons">
+              <a href="#social" className="btn btn-primary">
+                QUERO ME INSCREVER
+              </a>
+              <a href="#services" className="btn btn-secondary">
+                VER SERVIÇOS
+              </a>
+            </div>
+            <p className="cta-info">
+              <span className="info-icon">ℹ</span>
+              VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

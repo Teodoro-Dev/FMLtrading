@@ -55,7 +55,15 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="hero-overlay" />
       <div className="hero-inner">
-        <img className="hero-logo" src="/LogotipoFML.jpg" alt="Logotipo FML Trading" />
+        <img 
+          className="hero-logo" 
+          src="/LogotipoFML.jpg" 
+          alt="Logotipo FML Trading"
+          onError={(e) => {
+            console.warn('Failed to load hero logo:', e)
+            e.target.style.display = 'none'
+          }}
+        />
         <h1 className="hero-title">FML Trading</h1>
         <p className="hero-subtitle" aria-live="polite">
           {displayedText}
@@ -63,6 +71,18 @@ export default function Hero() {
         </p>
         <div className="hero-cta">
           <a href="#social" className="btn btn-primary btn-glow">Entrar no Canal Oficial</a>
+          <a href="#about" className="btn btn-secondary btn-outline">Conhecer Mais</a>
+        </div>
+        
+        {/* CTA adicional com destaque */}
+        <div className="hero-secondary-cta">
+          <a href="#social" className="btn btn-accent btn-large">
+            QUERO ME INSCREVER
+          </a>
+          <p className="cta-info">
+            <span className="info-icon">ℹ</span>
+            VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
+          </p>
         </div>
       </div>
     </section>

@@ -6,8 +6,8 @@ const links = [
     label: 'Telegram',
     href: 'https://t.me/',
     icon: (
-      <svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
-        <path fill="currentColor" d="M9.04 15.59l-.36 5.06c.52 0 .75-.21 1.02-.46l2.45-2.22 5.08 3.72c.93.51 1.59.24 1.85-.86l3.36-15.74.01-.01c.33-1.51-.55-2.1-1.45-1.74L1.27 9.44C-.2 10.03-.18 10.9 1.01 11.26l5.46 1.7 12.67-7.98c.6-.39 1.14-.17.69.22" />
+      <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0088cc" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.75-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06-.01.13-.02.2z"/>
       </svg>
     ),
   },
@@ -70,6 +70,62 @@ export default function SocialCTAs() {
             </Reveal>
           ))}
         </div>
+
+        {/* CTAs adicionais com botões */}
+        <Reveal>
+          <div className="additional-ctas">
+            <div className="cta-section">
+              <h3>Comece Sua Jornada Hoje</h3>
+              <div className="cta-buttons">
+                <a href="#social" className="btn btn-primary btn-large">
+                  QUERO ME INSCREVER
+                </a>
+                <a href="#about" className="btn btn-secondary btn-large">
+                  SABER MAIS
+                </a>
+              </div>
+              <p className="cta-info">
+                <span className="info-icon">ℹ</span>
+                VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        {/* Seção de ilustrações SVG */}
+        <Reveal>
+          <div className="svg-illustrations">
+            <div className="illustration-grid">
+              <div className="illustration-item">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Performance</span>
+              </div>
+              <div className="illustration-item">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Qualidade</span>
+              </div>
+              <div className="illustration-item">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="white" strokeWidth="2"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Comunidade</span>
+              </div>
+              <div className="illustration-item">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span>Sucesso</span>
+              </div>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

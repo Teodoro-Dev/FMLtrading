@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/LogotipoFML.jpg" />
@@ -7,9 +7,17 @@
     <meta name="theme-color" content="#0d1b2a" />
     <meta name="description" content="FML Trading – Inteligência de mercado, sinais e comunidade para acelerar sua evolução no trading." />
     <title>FML Trading • Landing Page</title>
+    <style>
+      /* Critical CSS to prevent FOUC */
+      body { margin: 0; padding: 0; }
+      #root { min-height: 100vh; }
+      .loading { display: flex; align-items: center; justify-content: center; height: 100vh; color: white; background: #0d1b2a; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading">Carregando...</div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

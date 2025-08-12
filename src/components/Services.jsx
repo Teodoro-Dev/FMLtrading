@@ -61,6 +61,26 @@ export default function Services() {
             </Reveal>
           ))}
         </div>
+        
+        {/* CTA adicional na seção Services */}
+        <Reveal>
+          <div className="services-cta">
+            <h3>Interessado em Nossos Serviços?</h3>
+            <p>Entre em contato e descubra como podemos ajudar você</p>
+            <div className="services-cta-buttons">
+              <a href="#social" className="btn btn-primary btn-large">
+                QUERO ME INSCREVER
+              </a>
+              <a href="mailto:contato@fmltrading.com" className="btn btn-secondary">
+                FALAR CONOSCO
+              </a>
+            </div>
+            <p className="cta-info">
+              <span className="info-icon">ℹ</span>
+              VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

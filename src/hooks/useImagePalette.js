@@ -57,10 +57,11 @@ export function useImagePalette(src) {
 
   useEffect(() => {
     if (!src) return
+    
     const img = new Image()
     img.crossOrigin = 'anonymous'
-    img.src = src
     img.decoding = 'async'
+    
     img.onload = () => {
       try {
         const colors = getDominantColorsFromImage(img, 12)
@@ -70,9 +71,17 @@ export function useImagePalette(src) {
           setPalette({ brand: primary, brandAlt: secondary, accent, textOnBrand })
         }
       } catch (e) {
+        console.warn('Failed to extract image palette:', e)
         // silent fallback to defaults
       }
     }
+    
+    img.onerror = () => {
+      console.warn('Failed to load image for palette extraction:', src)
+      // silent fallback to defaults
+    }
+    
+    img.src = src
   }, [src])
 
   // also expose CSS variables string for inline style usage
