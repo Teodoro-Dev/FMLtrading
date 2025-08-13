@@ -3,8 +3,8 @@ import Reveal from './Reveal'
 
 const links = [
   {
-    label: 'Telegram',
-    href: 'https://t.me/',
+    label: 'Telegram Feelps',
+    href: 'https://t.me/feelpsfx',
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
         <path fill="#0088cc" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.75-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06-.01.13-.02.2z"/>
@@ -12,8 +12,8 @@ const links = [
     ),
   },
   {
-    label: 'Network & Trading',
-    href: '#',
+    label: 'Comunidade FML',
+    href: 'https://discord.gg/3xcQey64RQ',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zM20.79 13c-.2 2.02-1.07 3.84-2.36 5.26L13 13V9h-4l-3.11-3.11C7.06 4.78 9.39 4 12 4c4.08 0 7.44 3.05 7.93 7h.86c.12.64.21 1.32.21 2h-.21z" />
@@ -21,8 +21,8 @@ const links = [
     ),
   },
   {
-    label: 'Canal Oficial',
-    href: '#',
+    label: 'YouTube FML',
+    href: 'https://www.youtube.com/channel/UCe41vLch_t6jE1oEoBWYn6g',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M12 3C7.03 3 3 6.58 3 11c0 2.39 1.2 4.54 3.09 6.03L6 22l3.17-1.79c.87.24 1.79.37 2.83.37 4.97 0 9-3.58 9-8s-4.03-8-9-8z" />
@@ -30,8 +30,8 @@ const links = [
     ),
   },
   {
-    label: 'Perfil oficial FML',
-    href: '#',
+    label: 'Instagram FML',
+    href: 'https://www.instagram.com/fml.trading/',
     icon: (
       <svg viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" />

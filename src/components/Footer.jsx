@@ -30,7 +30,10 @@ export default function Footer() {
           <div className="footer-links-group">
             <h5>Contato</h5>
             <a href="mailto:contato@fmltrading.com">contato@fmltrading.com</a>
-            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+            <a href="https://t.me/feelpsfx" target="_blank" rel="noreferrer">Telegram Feelps</a>
+            <a href="https://discord.gg/3xcQey64RQ" target="_blank" rel="noreferrer">Comunidade FML</a>
+            <a href="https://www.youtube.com/channel/UCe41vLch_t6jE1oEoBWYn6g" target="_blank" rel="noreferrer">YouTube FML</a>
+            <a href="https://www.instagram.com/fml.trading/" target="_blank" rel="noreferrer">Instagram FML</a>
           </div>
         </nav>
       </div>
