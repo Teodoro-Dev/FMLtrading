@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
+import Pricing from './components/Pricing'
 import Results from './components/Results'
 import SocialCTAs from './components/SocialCTAs'
 import Footer from './components/Footer'
@@ -44,6 +45,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Pricing />
       <Results />
       <SocialCTAs />
       <Footer />

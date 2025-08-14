@@ -69,14 +69,19 @@ export default function Hero() {
           {displayedText}
           <span className="typing-caret" aria-hidden="true">|</span>
         </p>
+        
         <div className="hero-cta">
-          <a href="#social" className="btn btn-primary btn-glow">Entrar no Canal Oficial</a>
-          <a href="#about" className="btn btn-secondary btn-outline">Conhecer Mais</a>
+          <a href="#social" className="btn btn-primary btn-glow">
+            Entrar no Canal Oficial
+          </a>
+          <a href="#about" className="btn btn-accent">
+            Conhecer Mais
+          </a>
         </div>
         
         {/* CTA adicional com destaque */}
         <div className="hero-secondary-cta">
-          <a href="#social" className="btn btn-accent btn-large">
+          <a href="#social" className="btn btn-accent btn-large btn-glow">
             QUERO ME INSCREVER
           </a>
           <p className="cta-info">

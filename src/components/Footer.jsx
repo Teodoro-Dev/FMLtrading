@@ -15,18 +15,21 @@ export default function Footer() {
           />
           <div className="footer-brand-text">
             <h4>FML Trading</h4>
-            <p>Disciplina, dados e comunidade.</p>
+            <p>Disciplina, dados e comunidade para resultados consistentes.</p>
           </div>
         </div>
+        
         <nav className="footer-links">
           <div className="footer-links-group">
             <h5>Navegação</h5>
             <a href="#hero">Início</a>
-            <a href="#about">Quem somos</a>
+            <a href="#about">Sobre</a>
             <a href="#services">Serviços</a>
+            <a href="#pricing">Preços</a>
             <a href="#results">Resultados</a>
             <a href="#social">Canais</a>
           </div>
+          
           <div className="footer-links-group">
             <h5>Contato</h5>
             <a href="mailto:contato@fmltrading.com">contato@fmltrading.com</a>
@@ -35,8 +38,18 @@ export default function Footer() {
             <a href="https://www.youtube.com/channel/UCe41vLch_t6jE1oEoBWYn6g" target="_blank" rel="noreferrer">YouTube FML</a>
             <a href="https://www.instagram.com/fml.trading/" target="_blank" rel="noreferrer">Instagram FML</a>
           </div>
+          
+          <div className="footer-links-group">
+            <h5>Recursos</h5>
+            <a href="#about">Metodologia</a>
+            <a href="#services">Análise de Mercado</a>
+            <a href="#pricing">Planos de Investimento</a>
+            <a href="#results">Casos de Sucesso</a>
+            <a href="#social">Comunidade</a>
+          </div>
         </nav>
       </div>
+      
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} FML Trading. Todos os direitos reservados.</p>
         <div className="footer-disclaimer">

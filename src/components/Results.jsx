@@ -45,7 +45,7 @@ export default function Results() {
                       parent.innerHTML = `
                         <div class="placeholder-content">
                           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z" fill="currentColor"/>
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                           </svg>
                           <span>Imagem não carregou</span>
                         </div>
@@ -73,7 +73,7 @@ export default function Results() {
               <div className="result-image placeholder">
                 <div className="placeholder-content">
                   <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z" fill="currentColor"/>
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                   <span>Imagem em breve</span>
                 </div>
@@ -94,7 +94,7 @@ export default function Results() {
               <div className="result-image placeholder">
                 <div className="placeholder-content">
                   <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z" fill="currentColor"/>
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                   <span>Imagem em breve</span>
                 </div>
@@ -104,62 +104,42 @@ export default function Results() {
               </div>
               <div className="result-content">
                 <h3>Mesa Aprovada</h3>
-                <p className="result-amount">R$ 95.000+</p>
-                <p className="result-description">Performance excepcional na análise de mercado</p>
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal>
-            <div className="result-card">
-              <div className="result-image placeholder">
-                <div className="placeholder-content">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2l4 7h-8l4-7zm0 20l-4-7h8l-4 7z" fill="currentColor"/>
-                  </svg>
-                  <span>Imagem em breve</span>
-                </div>
-                <div className="result-overlay">
-                  <span className="result-badge">Aprovado</span>
-                </div>
-              </div>
-              <div className="result-content">
-                <h3>Mesa Aprovada</h3>
-                <p className="result-amount">R$ 150.000+</p>
-                <p className="result-description">Maior saque da comunidade até o momento</p>
+                <p className="result-amount">R$ 65.000+</p>
+                <p className="result-description">Aprovação de mesa com resultados consistentes</p>
               </div>
             </div>
           </Reveal>
         </div>
-
-        <div className="results-stats">
-          <Reveal>
+        
+        {/* Stats Section */}
+        <Reveal>
+          <div className="results-stats">
             <div className="stats-grid">
-              <Stat label="Traders Ativos" end={500} />
-              <Stat label="Taxa de Aprovação" end={95} />
-              <Stat label="Total Aprovado" end={2000000} />
-              <div className="stat">
-                <div className="stat-value">24/7</div>
-                <div className="stat-label">Suporte</div>
-              </div>
+              <Stat label="Traders Atendidos" end={500} />
+              <Stat label="Mesas Aprovadas" end={150} />
+              <Stat label="Taxa de Sucesso" end={85} />
+              <Stat label="Anos de Experiência" end={5} />
             </div>
-          </Reveal>
-        </div>
-
-        {/* Novo CTA principal */}
+          </div>
+        </Reveal>
+        
+        {/* CTA adicional na seção Results */}
         <Reveal>
           <div className="results-cta">
-            <div className="cta-content">
-              <h3>Quer Fazer Parte Desta Comunidade?</h3>
-              <p>Junte-se aos traders que já estão lucrando com nossa metodologia</p>
-              <a href="#social" className="btn btn-primary btn-large">
+            <h3>Quer Fazer Parte Dessa História?</h3>
+            <p>Junte-se aos traders que já transformaram suas vidas com a FML Trading</p>
+            <div className="results-cta-buttons">
+              <a href="#social" className="btn btn-primary btn-large btn-glow">
                 QUERO ME INSCREVER
               </a>
-              <p className="cta-info">
-                <span className="info-icon">ℹ</span>
-                VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
-              </p>
+              <a href="#pricing" className="btn btn-accent">
+                VER PLANOS
+              </a>
             </div>
+            <p className="cta-info">
+              <span className="info-icon">ℹ</span>
+              VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
+            </p>
           </div>
         </Reveal>
       </div>
