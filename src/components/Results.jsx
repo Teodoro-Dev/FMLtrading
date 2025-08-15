@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Reveal from './Reveal'
 import { useOnScreen } from '../hooks/useOnScreen'
 import { useCountUp } from '../hooks/useCountUp'
@@ -14,16 +14,16 @@ function Stat({ label, end }) {
   )
 }
 
-export default function Results() {
+const Results = forwardRef((props, ref) => {
   return (
-    <section id="results" className="section results">
+    <section id="results" className="section results" ref={ref}>
       <div className="container">
         <Reveal>
           <header className="section-head">
-            <h2>Resultados que Falam por Si</h2>
+            <h2>Nossos Resultados</h2>
             <p>
-              Nossa metodologia comprovada já gerou resultados expressivos para centenas de traders.
-              Veja alguns exemplos reais de aprovação de mesas e saques.
+              Resultados comprovados que demonstram a eficácia da nossa metodologia 
+              e o sucesso dos nossos membros.
             </p>
           </header>
         </Reveal>
@@ -31,119 +31,77 @@ export default function Results() {
         <div className="results-grid">
           <Reveal>
             <div className="result-card">
-              <div className="result-image">
-                <img 
-                  src="/photo_2025-08-11_18-10-52.jpg" 
-                  alt="Saque de mais de 120 mil reais - Aprovação de mesa FML Trading"
-                  onError={(e) => {
-                    console.warn('Failed to load result image:', e)
-                    e.target.style.display = 'none'
-                    // Add fallback content when image fails to load
-                    const parent = e.target.parentElement
-                    if (parent) {
-                      parent.classList.add('placeholder')
-                      parent.innerHTML = `
-                        <div class="placeholder-content">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                          <span>Imagem não carregou</span>
-                        </div>
-                        <div class="result-overlay">
-                          <span class="result-badge">Aprovado</span>
-                        </div>
-                      `
-                    }
-                  }}
-                />
-                <div className="result-overlay">
-                  <span className="result-badge">Aprovado</span>
-                </div>
+              <div className="result-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
-              <div className="result-content">
-                <h3>Mesa Aprovada</h3>
-                <p className="result-amount">R$ 120.000+</p>
-                <p className="result-description">Saque realizado com sucesso após aprovação da mesa de análise</p>
-              </div>
+              <h3>500+</h3>
+              <p>Traders aprovados em mesas funded</p>
             </div>
           </Reveal>
-
+          
           <Reveal>
             <div className="result-card">
-              <div className="result-image placeholder">
-                <div className="placeholder-content">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span>Imagem em breve</span>
-                </div>
-                <div className="result-overlay">
-                  <span className="result-badge">Aprovado</span>
-                </div>
+              <div className="result-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
-              <div className="result-content">
-                <h3>Mesa Aprovada</h3>
-                <p className="result-amount">R$ 85.000+</p>
-                <p className="result-description">Aprovação de mesa com resultados consistentes</p>
-              </div>
+              <h3>85%</h3>
+              <p>Taxa de aprovação média</p>
             </div>
           </Reveal>
-
+          
           <Reveal>
             <div className="result-card">
-              <div className="result-image placeholder">
-                <div className="placeholder-content">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span>Imagem em breve</span>
-                </div>
-                <div className="result-overlay">
-                  <span className="result-badge">Aprovado</span>
-                </div>
+              <div className="result-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
-              <div className="result-content">
-                <h3>Mesa Aprovada</h3>
-                <p className="result-amount">R$ 65.000+</p>
-                <p className="result-description">Aprovação de mesa com resultados consistentes</p>
+              <h3>5+</h3>
+              <p>Anos de experiência no mercado</p>
+            </div>
+          </Reveal>
+          
+          <Reveal>
+            <div className="result-card">
+              <div className="result-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <polyline points="22,4 12,14.01 9,11.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
+              <h3>200K</h3>
+              <p>Maior mesa aprovada</p>
             </div>
           </Reveal>
         </div>
         
-        {/* Stats Section */}
-        <Reveal>
-          <div className="results-stats">
-            <div className="stats-grid">
-              <Stat label="Traders Atendidos" end={500} />
-              <Stat label="Mesas Aprovadas" end={150} />
-              <Stat label="Taxa de Sucesso" end={85} />
-              <Stat label="Anos de Experiência" end={5} />
-            </div>
-          </div>
-        </Reveal>
-        
-        {/* CTA adicional na seção Results */}
         <Reveal>
           <div className="results-cta">
-            <h3>Quer Fazer Parte Dessa História?</h3>
-            <p>Junte-se aos traders que já transformaram suas vidas com a FML Trading</p>
+            <h3>Quer fazer parte desses resultados?</h3>
+            <p>Junte-se à nossa comunidade e comece sua jornada para o sucesso</p>
             <div className="results-cta-buttons">
-              <a href="#social" className="btn btn-primary btn-large btn-glow">
+              <a href="#social" className="btn btn-primary btn-glow">
                 QUERO ME INSCREVER
               </a>
-              <a href="#pricing" className="btn btn-accent">
-                VER PLANOS
+              <a href="#about" className="btn btn-secondary">
+                CONHECER MAIS
               </a>
             </div>
-            <p className="cta-info">
-              <span className="info-icon">ℹ</span>
-              VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
-            </p>
           </div>
         </Reveal>
       </div>
     </section>
   )
-}
+})
+
+Results.displayName = 'Results'
+
+export default Results
 

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, forwardRef } from 'react'
 
-export default function Hero() {
+const Hero = forwardRef((props, ref) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [displayedText, setDisplayedText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
@@ -52,7 +52,7 @@ export default function Hero() {
   }, [displayedText, currentTextIndex, isDeleting, texts])
 
   return (
-    <section id="hero" className="hero">
+    <section id="hero" className="hero" ref={ref}>
       <div className="hero-overlay" />
       <div className="hero-inner">
         <img 
@@ -65,16 +65,16 @@ export default function Hero() {
           }}
         />
         <h1 className="hero-title">FML Trading</h1>
-        <p className="hero-subtitle" aria-live="polite">
+        <h2 className="hero-subtitle" aria-live="polite">
           {displayedText}
           <span className="typing-caret" aria-hidden="true">|</span>
-        </p>
+        </h2>
         
         <div className="hero-cta">
           <a href="#social" className="btn btn-primary btn-glow">
             Entrar no Canal Oficial
           </a>
-          <a href="#about" className="btn btn-accent">
+          <a href="#about" className="btn btn-secondary">
             Conhecer Mais
           </a>
         </div>
@@ -85,12 +85,19 @@ export default function Hero() {
             QUERO ME INSCREVER
           </a>
           <p className="cta-info">
-            <span className="info-icon">ℹ</span>
+            <svg className="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
+              <path d="M12 16v-4M12 8h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             VAGAS LIMITADAS E MEDIANTE APROVAÇÃO
           </p>
         </div>
       </div>
     </section>
   )
-}
+})
+
+Hero.displayName = 'Hero'
+
+export default Hero
 

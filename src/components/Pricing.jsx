@@ -1,201 +1,173 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Reveal from './Reveal'
 
-export default function Pricing() {
+const Arrow = () => (
+  <svg className="funded-arrow" width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 8h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M15 2l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+)
+
+const Pricing = forwardRef((props, ref) => {
   return (
-    <section id="pricing" className="section pricing">
+    <section id="pricing" className="section pricing" ref={ref}>
       <div className="container">
         <Reveal>
           <header className="section-head">
-            <h2>Planos de Investimento</h2>
-            <p>Escolha o plano ideal para o seu perfil de trader e comece sua jornada rumo ao sucesso</p>
+            <h2>Planos de Aprovação de Mesa</h2>
+            <p>
+              Opções alinhadas ao design atual, para entrada em contas financiadas (funded).
+            </p>
           </header>
         </Reveal>
-        
-        <div className="pricing-grid">
-          {/* FUNDED FOREX Panel */}
-          <Reveal delay={100}>
-            <div className="pricing-panel">
-              <div className="panel-header">
-                <h3>FUNDED FOREX</h3>
-                <div className="panel-badge">Mais Popular</div>
+
+        {/* Cards de Funded */}
+        <div className="funded-grid">
+          <Reveal>
+            <div className="funded-card featured">
+              <div className="funded-header">
+                <span className="icon-circle" aria-hidden>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="funded-title">Funded Forex</span>
               </div>
-              <div className="panel-content">
-                <div className="pricing-tier">
-                  <span className="tier-amount">50K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 800,00</span>
-                </div>
-                <div className="pricing-tier">
-                  <span className="tier-amount">100K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 1.200,00</span>
-                </div>
-                <div className="pricing-tier">
-                  <span className="tier-amount">200K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 1.800,00</span>
-                </div>
-              </div>
-              <div className="panel-footer">
-                <div className="fml-logo">
-                  <span>FML</span>
-                </div>
+              <div className="featured-badge">Mais Popular</div>
+              <ul className="funded-list">
+                <li className="funded-item">
+                  <span className="funded-label">50K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 800,00</span>
+                </li>
+                <li className="funded-item">
+                  <span className="funded-label">100K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 1.200,00</span>
+                </li>
+                <li className="funded-item">
+                  <span className="funded-label">200K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 1.800,00</span>
+                </li>
+              </ul>
+              <div className="funded-cta">
+                <a href="#social" className="btn btn-primary btn-full">Escolher este</a>
               </div>
             </div>
           </Reveal>
 
-          {/* FUNDED FUTUROS Panel */}
-          <Reveal delay={200}>
-            <div className="pricing-panel">
-              <div className="panel-header">
-                <h3>FUNDED FUTUROS</h3>
-                <div className="panel-badge">Alto Potencial</div>
+          <Reveal>
+            <div className="funded-card">
+              <div className="funded-header">
+                <span className="icon-circle" aria-hidden>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3h18v6H3zM3 15h18v6H3z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="funded-title">Funded Futuros</span>
               </div>
-              <div className="panel-content">
-                <div className="pricing-tier">
-                  <span className="tier-amount">50K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 700,00</span>
-                </div>
-                <div className="pricing-tier">
-                  <span className="tier-amount">100K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 1.000,00</span>
-                </div>
-                <div className="pricing-tier">
-                  <span className="tier-amount">150K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 1.200,00</span>
-                </div>
-                <div className="pricing-tier">
-                  <span className="tier-amount">200K USD</span>
-                  <span className="tier-arrows">→→→</span>
-                  <span className="tier-price">R$ 1.500,00</span>
-                </div>
-              </div>
-              <div className="panel-footer">
-                <div className="fml-logo">
-                  <span>FML</span>
-                </div>
+              <ul className="funded-list">
+                <li className="funded-item">
+                  <span className="funded-label">50K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 700,00</span>
+                </li>
+                <li className="funded-item">
+                  <span className="funded-label">100K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 1.000,00</span>
+                </li>
+                <li className="funded-item">
+                  <span className="funded-label">150K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 1.200,00</span>
+                </li>
+                <li className="funded-item">
+                  <span className="funded-label">200K USD</span>
+                  <span className="funded-mid"><Arrow /></span>
+                  <span className="funded-price">R$ 1.500,00</span>
+                </li>
+              </ul>
+              <div className="funded-cta">
+                <a href="#social" className="btn btn-secondary btn-full">Escolher este</a>
               </div>
             </div>
           </Reveal>
         </div>
 
-        {/* Comparison Table */}
-        <Reveal delay={300}>
-          <div className="pricing-comparison">
-            <h3>Comparação Detalhada dos Planos</h3>
-            <div className="comparison-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Recursos & Benefícios</th>
-                    <th>FUNDED FOREX</th>
-                    <th>FUNDED FUTUROS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Capital Inicial</td>
-                    <td>50K - 200K USD</td>
-                    <td>50K - 200K USD</td>
-                  </tr>
-                  <tr>
-                    <td>Taxa de Aprovação</td>
-                    <td>85%</td>
-                    <td>90%</td>
-                  </tr>
-                  <tr>
-                    <td>Prazo de Aprovação</td>
-                    <td>7-14 dias</td>
-                    <td>5-10 dias</td>
-                  </tr>
-                  <tr>
-                    <td>Potencial de Ganho Mensal</td>
-                    <td>8-15% do capital</td>
-                    <td>10-20% do capital</td>
-                  </tr>
-                  <tr>
-                    <td>Saques Disponíveis</td>
-                    <td>Mensal após aprovação</td>
-                    <td>Quinzenal após aprovação</td>
-                  </tr>
-                  <tr>
-                    <td>Suporte Premium</td>
-                    <td>24/7 via Telegram</td>
-                    <td>24/7 + Mentoria Individual</td>
-                  </tr>
-                  <tr>
-                    <td>Análises Exclusivas</td>
-                    <td>Diárias</td>
-                    <td>Diárias + Alertas VIP</td>
-                  </tr>
-                  <tr>
-                    <td>Comunidade</td>
-                    <td>Acesso Completo</td>
-                    <td>Acesso + Grupo VIP</td>
-                  </tr>
-                  <tr>
-                    <td>ROI Estimado (6 meses)</td>
-                    <td>150-300%</td>
-                    <td>200-400%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        {/* Tabela comparativa */}
+        <Reveal>
+          <header className="section-head" style={{marginTop: '1rem'}}>
+            <h2>Comparação Detalhada dos Planos</h2>
+          </header>
         </Reveal>
 
-        {/* Benefits Section */}
-        <Reveal delay={400}>
-          <div className="pricing-benefits">
-            <h3>Por que escolher a FML Trading?</h3>
-            <div className="benefits-grid">
-              <div className="benefit-item">
-                <div className="benefit-icon">🚀</div>
-                <h4>Metodologia Comprovada</h4>
-                <p>5+ anos de resultados consistentes com mais de 500 traders aprovados</p>
-              </div>
-              <div className="benefit-item">
-                <div className="benefit-icon">💎</div>
-                <h4>Taxa de Sucesso Alta</h4>
-                <p>85-90% de aprovação em mesas de até 200K USD</p>
-              </div>
-              <div className="benefit-item">
-                <div className="benefit-icon">⚡</div>
-                <h4>Resultados Rápidos</h4>
-                <p>Aprovação em 5-14 dias com saques disponíveis imediatamente</p>
-              </div>
-              <div className="benefit-item">
-                <div className="benefit-icon">🎯</div>
-                <h4>Potencial de Ganho</h4>
-                <p>ROI de 150-400% em 6 meses com gestão de risco profissional</p>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-
-        <Reveal delay={500}>
-          <div className="pricing-cta">
-            <h3>Pronto para Transformar sua Jornada?</h3>
-            <p>Junte-se aos traders que já estão lucrando com nossa metodologia</p>
-            <div className="pricing-cta-buttons">
-              <a href="#social" className="btn btn-primary btn-glow btn-large">
-                QUERO ME INSCREVER AGORA
-              </a>
-              <a href="#about" className="btn btn-accent btn-large">
-                SABER MAIS
-              </a>
-            </div>
-            <p className="pricing-note">
-              <span className="info-icon">ℹ</span>
-              VAGAS LIMITADAS E MEDIANTE APROVAÇÃO - APROVEITE A OPORTUNIDADE
-            </p>
+        <Reveal>
+          <div style={{overflowX: 'auto'}}>
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th>Recursos & Benefícios</th>
+                  <th>Funded Forex</th>
+                  <th>Funded Futuros</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Capital Inicial</th>
+                  <td>50K - 200K USD</td>
+                  <td>50K - 200K USD</td>
+                </tr>
+                <tr>
+                  <th>Taxa de Aprovação</th>
+                  <td>85%</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <th>Prazo de Aprovação</th>
+                  <td>7-14 dias</td>
+                  <td>5-10 dias</td>
+                </tr>
+                <tr>
+                  <th>Potencial de Ganho Mensal</th>
+                  <td>8–15% do capital</td>
+                  <td>10–20% do capital</td>
+                </tr>
+                <tr>
+                  <th>Saques Disponíveis</th>
+                  <td>Mensal após aprovação</td>
+                  <td>Quinzenal após aprovação</td>
+                </tr>
+                <tr>
+                  <th>Suporte Premium</th>
+                  <td>24/7 via Telegram</td>
+                  <td>24/7 + Mentoria Individual</td>
+                </tr>
+                <tr>
+                  <th>Análises Exclusivas</th>
+                  <td>Diárias</td>
+                  <td>Diárias + Alertas VIP</td>
+                </tr>
+                <tr>
+                  <th>Comunidade</th>
+                  <td>Acesso Completo</td>
+                  <td>Acesso + Grupo VIP</td>
+                </tr>
+                <tr>
+                  <th>ROI Estimado (6 meses)</th>
+                  <td><span className="badge-pill">150–300%</span></td>
+                  <td><span className="badge-pill">200–400%</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </Reveal>
       </div>
     </section>
   )
-}
+})
+
+Pricing.displayName = 'Pricing'
+
+export default Pricing

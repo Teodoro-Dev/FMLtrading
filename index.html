@@ -11,13 +11,10 @@
       /* Critical CSS to prevent FOUC */
       body { margin: 0; padding: 0; }
       #root { min-height: 100vh; }
-      .loading { display: flex; align-items: center; justify-content: center; height: 100vh; color: white; background: #0d1b2a; }
     </style>
   </head>
   <body>
-    <div id="root">
-      <div class="loading">Carregando...</div>
-    </div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

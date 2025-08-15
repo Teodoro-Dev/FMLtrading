@@ -8,23 +8,49 @@ import Results from './components/Results'
 import SocialCTAs from './components/SocialCTAs'
 import Footer from './components/Footer'
 import Loading from './components/Loading'
-import { useEffect, useState } from 'react'
-import { useImagePalette } from './hooks/useImagePalette'
+import { useEffect, useState, useRef } from 'react'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
-  const { cssVars } = useImagePalette('/LogotipoFML.jpg')
+  const [currentSection, setCurrentSection] = useState('hero')
+  const sectionsRef = useRef({})
 
-  // Apply palette to document root as CSS variables
+  // Intersection Observer for smooth section transitions
   useEffect(() => {
-    try {
-      const root = document.documentElement
-      Object.entries(cssVars).forEach(([k, v]) => root.style.setProperty(k, v))
-      root.style.setProperty('--brand-rgba', '0,0,0')
-    } catch (error) {
-      console.warn('Failed to apply CSS variables:', error)
+    const observerOptions = {
+      threshold: 0.3,
+      rootMargin: '-10% 0px -10% 0px'
     }
-  }, [cssVars])
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id
+          setCurrentSection(sectionId)
+          
+          // Add entrance animation
+          entry.target.classList.add('section-visible')
+          
+          // Remove animation class after animation completes
+          setTimeout(() => {
+            entry.target.classList.remove('section-visible')
+          }, 1000)
+        }
+      })
+    }, observerOptions)
+
+    // Observe all sections after they're rendered
+    const timer = setTimeout(() => {
+      Object.values(sectionsRef.current).forEach(section => {
+        if (section) observer.observe(section)
+      })
+    }, 100)
+
+    return () => {
+      clearTimeout(timer)
+      observer.disconnect()
+    }
+  }, [])
 
   // Simular tempo de carregamento
   useEffect(() => {
@@ -40,15 +66,15 @@ function App() {
   }
 
   return (
-    <div style={cssVars}>
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Pricing />
-      <Results />
-      <SocialCTAs />
-      <Footer />
+    <div className="app-container">
+      <Header currentSection={currentSection} />
+      <Hero ref={(el) => sectionsRef.current.hero = el} />
+      <About ref={(el) => sectionsRef.current.about = el} />
+      <Services ref={(el) => sectionsRef.current.services = el} />
+      <Pricing ref={(el) => sectionsRef.current.pricing = el} />
+      <Results ref={(el) => sectionsRef.current.results = el} />
+      <SocialCTAs ref={(el) => sectionsRef.current.social = el} />
+      <Footer ref={(el) => sectionsRef.current.footer = el} />
     </div>
   )
 }

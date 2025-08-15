@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { forwardRef, useEffect, useRef, useState } from 'react'
 
-export default function Reveal({ children, threshold = 0.1, rootMargin = '0px', delay = 0 }) {
+const Reveal = forwardRef(({ children, delay = 0, className = '', ...props }, ref) => {
   const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef(null)
+  const elementRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -14,34 +14,34 @@ export default function Reveal({ children, threshold = 0.1, rootMargin = '0px', 
         }
       },
       {
-        threshold,
-        rootMargin,
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
       }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    if (elementRef.current) {
+      observer.observe(elementRef.current)
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current)
       }
     }
-  }, [threshold, rootMargin, delay])
+  }, [delay])
 
   return (
     <div
-      ref={ref}
-      className={`reveal ${isVisible ? 'is-visible' : ''}`}
-      style={{
-        transitionDelay: `${delay}ms`,
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
-      }}
+      ref={elementRef}
+      className={`reveal ${isVisible ? 'reveal-visible' : ''} ${className}`}
+      {...props}
     >
       {children}
     </div>
   )
-}
+})
+
+Reveal.displayName = 'Reveal'
+
+export default Reveal
 
