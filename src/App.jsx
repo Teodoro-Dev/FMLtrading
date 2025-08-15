@@ -5,6 +5,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
 import Results from './components/Results'
+import Community from './components/Community'
 import SocialCTAs from './components/SocialCTAs'
 import Footer from './components/Footer'
 import Loading from './components/Loading'
@@ -73,6 +74,7 @@ function App() {
       <Services ref={(el) => sectionsRef.current.services = el} />
       <Pricing ref={(el) => sectionsRef.current.pricing = el} />
       <Results ref={(el) => sectionsRef.current.results = el} />
+      <Community ref={(el) => sectionsRef.current.community = el} />
       <SocialCTAs ref={(el) => sectionsRef.current.social = el} />
       <Footer ref={(el) => sectionsRef.current.footer = el} />
     </div>

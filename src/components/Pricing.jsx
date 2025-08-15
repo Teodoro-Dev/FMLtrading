@@ -16,7 +16,7 @@ const Pricing = forwardRef((props, ref) => {
           <header className="section-head">
             <h2>Planos de Aprovação de Mesa</h2>
             <p>
-              Opções alinhadas ao design atual, para entrada em contas financiadas (funded).
+              Opções alinhadas ao design atual, para entrada em contas financiadas.
             </p>
           </header>
         </Reveal>
@@ -52,7 +52,7 @@ const Pricing = forwardRef((props, ref) => {
                 </li>
               </ul>
               <div className="funded-cta">
-                <a href="#social" className="btn btn-primary btn-full">Escolher este</a>
+                <a href="https://t.me/feelpsfx" className="btn btn-primary btn-full">Escolher este</a>
               </div>
             </div>
           </Reveal>
@@ -90,77 +90,65 @@ const Pricing = forwardRef((props, ref) => {
                 </li>
               </ul>
               <div className="funded-cta">
-                <a href="#social" className="btn btn-secondary btn-full">Escolher este</a>
+                <a href="https://t.me/feelpsfx" className="btn btn-secondary btn-full">Escolher este</a>
               </div>
             </div>
           </Reveal>
         </div>
 
-        {/* Tabela comparativa */}
+        {/* Informações adicionais dos planos */}
         <Reveal>
-          <header className="section-head" style={{marginTop: '1rem'}}>
-            <h2>Comparação Detalhada dos Planos</h2>
-          </header>
-        </Reveal>
-
-        <Reveal>
-          <div style={{overflowX: 'auto'}}>
-            <table className="comparison-table">
-              <thead>
-                <tr>
-                  <th>Recursos & Benefícios</th>
-                  <th>Funded Forex</th>
-                  <th>Funded Futuros</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Capital Inicial</th>
-                  <td>50K - 200K USD</td>
-                  <td>50K - 200K USD</td>
-                </tr>
-                <tr>
-                  <th>Taxa de Aprovação</th>
-                  <td>85%</td>
-                  <td>90%</td>
-                </tr>
-                <tr>
-                  <th>Prazo de Aprovação</th>
-                  <td>7-14 dias</td>
-                  <td>5-10 dias</td>
-                </tr>
-                <tr>
-                  <th>Potencial de Ganho Mensal</th>
-                  <td>8–15% do capital</td>
-                  <td>10–20% do capital</td>
-                </tr>
-                <tr>
-                  <th>Saques Disponíveis</th>
-                  <td>Mensal após aprovação</td>
-                  <td>Quinzenal após aprovação</td>
-                </tr>
-                <tr>
-                  <th>Suporte Premium</th>
-                  <td>24/7 via Telegram</td>
-                  <td>24/7 + Mentoria Individual</td>
-                </tr>
-                <tr>
-                  <th>Análises Exclusivas</th>
-                  <td>Diárias</td>
-                  <td>Diárias + Alertas VIP</td>
-                </tr>
-                <tr>
-                  <th>Comunidade</th>
-                  <td>Acesso Completo</td>
-                  <td>Acesso + Grupo VIP</td>
-                </tr>
-                <tr>
-                  <th>ROI Estimado (6 meses)</th>
-                  <td><span className="badge-pill">150–300%</span></td>
-                  <td><span className="badge-pill">200–400%</span></td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="pricing-benefits">
+            <div className="benefits-grid">
+              <div className="benefit-item">
+                <div className="benefit-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <polyline points="22,4 12,14.01 9,11.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="benefit-content">
+                  <h4>Taxa de Aprovação 80%</h4>
+                  <p>Alta probabilidade de sucesso com nossa metodologia comprovada</p>
+                </div>
+              </div>
+              
+              <div className="benefit-item">
+                <div className="benefit-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="benefit-content">
+                  <h4>Suporte 24/7 via Telegram</h4>
+                  <p>Assistência completa a qualquer momento do dia</p>
+                </div>
+              </div>
+              
+              <div className="benefit-item">
+                <div className="benefit-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="benefit-content">
+                  <h4>Potencial de +1.000 USD</h4>
+                  <p>Possibilidade de ganhos superiores a mil dólares em todas as contas após aprovação</p>
+                </div>
+              </div>
+              
+              <div className="benefit-item">
+                <div className="benefit-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <div className="benefit-content">
+                  <h4>Aprovação em menos de um trimestre</h4>
+                  <p>Processo acelerado para começar a lucrar rapidamente</p>
+                </div>
+              </div>
+            </div>
           </div>
         </Reveal>
       </div>

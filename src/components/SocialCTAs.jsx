@@ -22,10 +22,10 @@ const SocialCTAs = forwardRef((props, ref) => {
                   <path d="M21.5 5.5l-5.8 15.4c-.2.6-.9.7-1.3.3l-4-3.3-2 1.9c-.4.4-1.1.2-1.2-.4l.4-4.6L20.9 4.3c.6-.4 1.3.2 1 1.2zM9.1 15.7l-.3 2.8 1.5-1.4 8-7.7-9.2 6.3z" fill="currentColor"/>
                 </svg>
               </div>
-              <h3>Telegram Feelps</h3>
-              <p>Canal oficial com sinais e análises</p>
-              <a href="https://t.me/fmltrading" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Entrar no Canal
+              <h3>Entre em contacto (telegram)</h3>
+              <p>Meio de comunicação FML oficial</p>
+              <a href="https://t.me/feelpsfx" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Envie-nos uma mensagem
               </a>
             </div>
           </Reveal>
@@ -37,7 +37,7 @@ const SocialCTAs = forwardRef((props, ref) => {
                   <path d="M21.5 12.3c0-3.6-2.9-6.5-6.5-6.5-1.5 0-2.9.5-4 1.3-.5-.1-1-.2-1.6-.2C6 6.9 3.8 9 3.8 11.7c0 1.8 1 3.4 2.5 4.3v1.7c0 .6.6 1 1.2.7l2.1-1.1c.4.1.9.1 1.3.1 3.6 0 6.6-2.9 6.6-6.4z" stroke="currentColor" strokeWidth="2"/>
                 </svg>
               </div>
-              <h3>Comunidade FML</h3>
+              <h3>FML - Trading & Network</h3>
               <p>Servidor da comunidade (Discord)</p>
               <a href="#" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 Entrar na Comunidade
@@ -54,7 +54,7 @@ const SocialCTAs = forwardRef((props, ref) => {
                   <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
                 </svg>
               </div>
-              <h3>Instagram FML</h3>
+              <h3>Instagram</h3>
               <p>Conteúdo e novidades</p>
               <a href="https://instagram.com/fml.trading" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Abrir Instagram
@@ -70,9 +70,9 @@ const SocialCTAs = forwardRef((props, ref) => {
                   <polygon points="10,15.5 10,8.5 16,12" fill="currentColor"/>
                 </svg>
               </div>
-              <h3>YouTube FML</h3>
+              <h3>Canal - YouTube</h3>
               <p>Vídeos e análises</p>
-              <a href="https://youtube.com/fmltrading" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/channel/UCe41vLch_t6jE1oEoBWYn6g" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 Abrir YouTube
               </a>
             </div>
@@ -85,7 +85,7 @@ const SocialCTAs = forwardRef((props, ref) => {
                   <polyline points="3,7 12,13 21,7" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
-              <h3>GMAIL</h3>
+              <h3>Email</h3>
               <p>Escreva-nos por e-mail</p>
               <a href="mailto:contato@fmltrading.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Enviar Email
@@ -96,14 +96,39 @@ const SocialCTAs = forwardRef((props, ref) => {
         
         <Reveal>
           <div className="contact-cta">
-            <h3>Dúvidas?</h3>
-            <p>Fale pelo email ou entre no canal do Telegram</p>
+            <h3>DÚVIDAS E CTA FINAL</h3>
+            <p>SEJA LOGO MEMBRO DA FML E ADQUIRA NOSSOS SERVIÇOS</p>
+            <div className="contact-cta-description">
+              <p>
+                Não perca mais tempo! Junte-se agora à comunidade FML e comece sua 
+                jornada para o sucesso no trading. Nossa metodologia comprovada já 
+                transformou centenas de traders em profissionais lucrativos.
+              </p>
+              <div className="cta-highlights">
+                <div className="highlight-item">
+                  <span className="highlight-icon">✓</span>
+                  <span>Taxa de aprovação de 80%</span>
+                </div>
+                <div className="highlight-item">
+                  <span className="highlight-icon">✓</span>
+                  <span>Suporte 24/7 via Telegram</span>
+                </div>
+                <div className="highlight-item">
+                  <span className="highlight-icon">✓</span>
+                  <span>Potencial de +1.000 USD por mês</span>
+                </div>
+                <div className="highlight-item">
+                  <span className="highlight-icon">✓</span>
+                  <span>Mentorias individuais exclusivas</span>
+                </div>
+              </div>
+            </div>
             <div className="contact-cta-buttons">
-              <a href="mailto:contato@fmltrading.com" className="btn btn-primary btn-glow">
-                GMAIL
+              <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow" target="_blank" rel="noopener noreferrer">
+                SEJA MEMBRO FML AGORA
               </a>
-              <a href="https://t.me/fmltrading" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                TELEGRAM
+              <a href="mailto:contato@fmltrading.com" className="btn btn-secondary">
+                FALAR COM ESPECIALISTA
               </a>
             </div>
           </div>

@@ -17,7 +17,7 @@ const Footer = forwardRef((props, ref) => {
                 }}
               />
               <h3>FML Trading</h3>
-              <p>Transformando traders iniciantes em profissionais do mercado</p>
+              <p>Transformando traders iniciantes em profissionais</p>
             </div>
           </div>
           
@@ -46,7 +46,7 @@ const Footer = forwardRef((props, ref) => {
             <h4>Contato</h4>
             <ul className="footer-links">
               <li>
-                <a href="https://t.me/fmltrading" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/feelpsfx" target="_blank" rel="noopener noreferrer">
                   <svg className="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
@@ -70,7 +70,7 @@ const Footer = forwardRef((props, ref) => {
           <div className="footer-bottom-content">
             <p>&copy; {new Date().getFullYear()} FML Trading. Todos os direitos reservados.</p>
             <div className="footer-social">
-              <a href="https://t.me/fmltrading" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <a href="https://t.me/feelpsfx" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -82,7 +82,7 @@ const Footer = forwardRef((props, ref) => {
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </a>
-              <a href="https://youtube.com/fmltrading" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <a href="https://www.youtube.com/channel/UCe41vLch_t6jE1oEoBWYn6g" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>

@@ -1552,3 +1552,344 @@ a { color: inherit; text-decoration: none; }
     padding: 16px 28px;
   }
 }
+
+/* Estilos para os novos componentes */
+
+/* Pricing Benefits */
+.pricing-benefits {
+  margin-top: 4rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glow);
+  border-color: var(--accent);
+}
+
+.benefit-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-radius: 12px;
+  color: var(--text-on-brand);
+}
+
+.benefit-content h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.benefit-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Results Gallery */
+.results-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.result-image-card {
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.result-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glow);
+  border-color: var(--accent);
+}
+
+.result-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.result-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.result-image-card:hover .result-image img {
+  transform: scale(1.05);
+}
+
+.result-image.placeholder {
+  background: linear-gradient(135deg, var(--surface-2), var(--surface));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.placeholder-content svg {
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.placeholder-content span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.result-image-info {
+  padding: 1.5rem;
+}
+
+.result-image-info h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.result-image-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Community Section */
+.community {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.community-card {
+  position: relative;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--glow);
+  border-color: var(--accent);
+}
+
+.community-card.featured {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.community-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-radius: 16px;
+  color: var(--text-on-brand);
+  margin-bottom: 1.5rem;
+}
+
+.community-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.community-card p {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.community-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.community-features li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.community-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-4);
+  font-weight: bold;
+}
+
+.community-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+}
+
+.community-cta h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.community-cta p {
+  margin: 0 0 2rem 0;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.community-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Enhanced Contact CTA */
+.contact-cta-description {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.contact-cta-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: var(--surface-2);
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+}
+
+.highlight-icon {
+  color: var(--accent-4);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.highlight-item span:last-child {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Responsive adjustments for new components */
+@media (max-width: 768px) {
+  .benefits-grid,
+  .results-gallery,
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    align-self: center;
+  }
+  
+  .community-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-highlights {
+    grid-template-columns: 1fr;
+  }
+  
+  .result-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-card {
+    padding: 1.5rem;
+  }
+  
+  .community-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  .community-cta h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-cta-description p {
+    font-size: 1rem;
+  }
+  
+  .result-image {
+    height: 160px;
+  }
+}

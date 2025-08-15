@@ -71,18 +71,18 @@ const Hero = forwardRef((props, ref) => {
         </h2>
         
         <div className="hero-cta">
-          <a href="#social" className="btn btn-primary btn-glow">
-            Entrar no Canal Oficial
+          <a href="#services" className="btn btn-primary btn-glow">
+            Conheça nossos serviços
           </a>
           <a href="#about" className="btn btn-secondary">
-            Conhecer Mais
+            Saiba mais sobre a FML
           </a>
         </div>
         
         {/* CTA adicional com destaque */}
         <div className="hero-secondary-cta">
-          <a href="#social" className="btn btn-accent btn-large btn-glow">
-            QUERO ME INSCREVER
+          <a href="https://t.me/feelpsfx" className="btn btn-accent btn-large btn-glow">
+            QUERO FAZER PARTE
           </a>
           <p className="cta-info">
             <svg className="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

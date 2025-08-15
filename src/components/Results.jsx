@@ -81,16 +81,72 @@ const Results = forwardRef((props, ref) => {
             </div>
           </Reveal>
         </div>
+
+        {/* Galeria de Resultados */}
+        <Reveal>
+          <header className="section-head" style={{marginTop: '3rem'}}>
+            <h2>Resultados Reais dos Nossos Membros</h2>
+            <p>Provas visuais do sucesso da nossa metodologia</p>
+          </header>
+        </Reveal>
+
+        <Reveal>
+          <div className="results-gallery">
+            <div className="result-image-card">
+              <div className="result-image">
+                <img 
+                  src="/photo_2025-08-11_18-10-52.jpg" 
+                  alt="Saque de mais de 120.000 reais" 
+                  loading="lazy"
+                />
+              </div>
+              <div className="result-image-info">
+                <h4>Saque de +120.000 R$</h4>
+                <p>Resultado real de um membro FML</p>
+              </div>
+            </div>
+            
+            <div className="result-image-card">
+              <div className="result-image placeholder">
+                <div className="placeholder-content">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Resultado em breve</span>
+                </div>
+              </div>
+              <div className="result-image-info">
+                <h4>Novo Resultado</h4>
+                <p>Mais conquistas chegando</p>
+              </div>
+            </div>
+            
+            <div className="result-image-card">
+              <div className="result-image placeholder">
+                <div className="placeholder-content">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span>Resultado em breve</span>
+                </div>
+              </div>
+              <div className="result-image-info">
+                <h4>Novo Resultado</h4>
+                <p>Mais conquistas chegando</p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
         
         <Reveal>
           <div className="results-cta">
             <h3>Quer fazer parte desses resultados?</h3>
-            <p>Junte-se à nossa comunidade e comece sua jornada para o sucesso</p>
+            <p>Solicite nossos serviços e lucre conosco</p>
             <div className="results-cta-buttons">
-              <a href="#social" className="btn btn-primary btn-glow">
-                QUERO ME INSCREVER
+              <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow">
+                QUERO LUCRAR COM A FML
               </a>
-              <a href="#about" className="btn btn-secondary">
+              <a href="#services" className="btn btn-secondary">
                 CONHECER MAIS
               </a>
             </div>
