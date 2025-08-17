@@ -96,33 +96,8 @@ const SocialCTAs = forwardRef((props, ref) => {
         
         <Reveal>
           <div className="contact-cta">
-            <h3>DÚVIDAS E CTA FINAL</h3>
-            <p>SEJA LOGO MEMBRO DA FML E ADQUIRA NOSSOS SERVIÇOS</p>
-            <div className="contact-cta-description">
-              <p>
-                Não perca mais tempo! Junte-se agora à comunidade FML e comece sua 
-                jornada para o sucesso no trading. Nossa metodologia comprovada já 
-                transformou centenas de traders em profissionais lucrativos.
-              </p>
-              <div className="cta-highlights">
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Taxa de aprovação de 80%</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Suporte 24/7 via Telegram</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Potencial de +1.000 USD por mês</span>
-                </div>
-                <div className="highlight-item">
-                  <span className="highlight-icon">✓</span>
-                  <span>Mentorias individuais exclusivas</span>
-                </div>
-              </div>
-            </div>
+            <h3>Quer transformar a sua vida?</h3>
+            <p>A metodologia FML já transformou centenas de traders em profissionais lucrativos. Sua hora de brilhar chegou, não deixe essa oportunidade passar.</p>
             <div className="contact-cta-buttons">
               <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow" target="_blank" rel="noopener noreferrer">
                 SEJA MEMBRO FML AGORA

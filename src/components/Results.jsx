@@ -139,9 +139,9 @@ const Results = forwardRef((props, ref) => {
         </Reveal>
         
         <Reveal>
-          <div className="results-cta">
-            <h3>Quer fazer parte desses resultados?</h3>
-            <p>Solicite nossos serviços e lucre conosco</p>
+          <div className="results-cta" style={{marginTop: '4rem'}}>
+            <h3>Seja o Próximo Sucesso da FML</h3>
+            <p>Agora é sua vez de brilhar!</p>
             <div className="results-cta-buttons">
               <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow">
                 QUERO LUCRAR COM A FML
