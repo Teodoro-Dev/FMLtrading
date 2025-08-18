@@ -86,7 +86,7 @@ const Results = forwardRef((props, ref) => {
         <Reveal>
           <header className="section-head" style={{marginTop: '3rem'}}>
             <h2>Resultados Reais dos Nossos Membros</h2>
-            <p>Provas visuais do sucesso da nossa metodologia</p>
+            <p>Provas REAIS do sucesso da nossa metodologia</p>
           </header>
         </Reveal>
 
@@ -107,33 +107,34 @@ const Results = forwardRef((props, ref) => {
             </div>
             
             <div className="result-image-card">
-              <div className="result-image placeholder">
-                <div className="placeholder-content">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span>Resultado em breve</span>
-                </div>
-              </div>
+            <div className="result-image">
+            <img 
+                  src="/IMG_3076.png" 
+                  alt="Saque de mais de 120.000 reais" 
+                  loading="lazy"
+                />
+              </div> 
               <div className="result-image-info">
-                <h4>Novo Resultado</h4>
-                <p>Mais conquistas chegando</p>
+                <h4>Mais saques</h4>
+
+                <p>+10.000 R$ em saques em apenas 1 mês</p>
               </div>
             </div>
             
             <div className="result-image-card">
-              <div className="result-image placeholder">
-                <div className="placeholder-content">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 1v22M7 5h10a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span>Resultado em breve</span>
-                </div>
-              </div>
+            <div className="result-image">
+            <img 
+                  src="/payout.png" 
+                  alt="Saque de mais de 120.000 reais" 
+                  loading="lazy"
+                />
+              </div> 
               <div className="result-image-info">
-                <h4>Novo Resultado</h4>
-                <p>Mais conquistas chegando</p>
+                <h4>Aprovações</h4>
+
+                <p>Aprovações em mesa de futuros</p>
               </div>
+
             </div>
           </div>
         </Reveal>

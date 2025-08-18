@@ -16,7 +16,7 @@ const Pricing = forwardRef((props, ref) => {
           <header className="section-head">
             <h2>Planos de Aprovação de Mesa</h2>
             <p>
-              Opções alinhadas ao design atual, para entrada em contas financiadas.
+              Escolha o seu plano e lucre conosco!
             </p>
           </header>
         </Reveal>

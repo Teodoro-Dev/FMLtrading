@@ -349,6 +349,35 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--glow);
 }
 
+/* Header Mobile Persistente - Adicionado */
+.site-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Garantir que o header não seja ocultado em mobile */
+@media (max-width: 768px) {
+  .site-header {
+    transform: translateY(0) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Adicionar padding-top ao body para compensar o header fixo */
+  body {
+    padding-top: 72px; /* Altura do seu header */
+  }
+  
+  /* Ajustes para seções quando header é fixo */
+  section[id] {
+    scroll-margin-top: 90px; /* Compensa altura do header + margem */
+  }
+}
+
 /* Mobile Menu Toggle */
 .mobile-menu-toggle {
   display: none;
@@ -592,6 +621,10 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
 }
 
+/* Scroll suave personalizado - Adicionado */
+html {
+  scroll-behavior: smooth;
+}
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -1906,3 +1939,4 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   padding: 6rem 0;
 }
+

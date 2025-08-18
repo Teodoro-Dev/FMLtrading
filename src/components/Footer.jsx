@@ -33,16 +33,6 @@ const Footer = forwardRef((props, ref) => {
           </div>
           
           <div className="footer-section">
-            <h4>Serviços</h4>
-            <ul className="footer-links">
-              <li><a href="#services">Análise Técnica</a></li>
-              <li><a href="#services">Gestão de Risco</a></li>
-              <li><a href="#services">Comunidade Exclusiva</a></li>
-              <li><a href="#pricing">Planos de Assinatura</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
             <h4>Contato</h4>
             <ul className="footer-links">
               <li>
