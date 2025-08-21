@@ -99,6 +99,26 @@ const Community = forwardRef((props, ref) => {
             </div>
           </div>
         </Reveal>
+
+        {/* Embed do vídeo YouTube */}
+        <Reveal>
+          <div className="community-video-embed">
+            <h3 className="community-video-headline">
+              Veja como a FML transforma traders em profissionais!
+            </h3>
+            <div className="video-responsive">
+              <iframe
+                src="https://www.youtube.com/embed/ROu3iKEDURo?si=NsA2ggVBqxmoj3VI"
+                // https://www.youtube.com/embed/pWZS6QNLyvY?si=5jnO7eL7sgo2VBrY
+                
+                title="FML Trading Community"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
