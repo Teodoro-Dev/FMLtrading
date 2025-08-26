@@ -23,8 +23,8 @@ const Services = forwardRef((props, ref) => {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>Análise Técnica</h3>
-              <p>Análises detalhadas com indicadores avançados e padrões de mercado reconhecidos.</p>
+              <h3>Análise Técnica Semanal</h3>
+              <p>Análises detalhadas com  padrões de mercado alinhados a metodologia SMART MONEY CONCEPTS.</p>
               <a href="#pricing" className="btn btn-primary">Saiba Mais</a>
             </div>
           </Reveal>
@@ -37,7 +37,7 @@ const Services = forwardRef((props, ref) => {
                 </svg>
               </div>
               <h3>Gestão de Risco</h3>
-              <p>Estratégias comprovadas para proteger seu capital e maximizar retornos.</p>
+              <p>Estratégias comprovadas para proteger seu capital e maximizar retornos para as aprovações de contas.</p>
               <a href="#pricing" className="btn btn-secondary">Saiba Mais</a>
             </div>
           </Reveal>
@@ -53,7 +53,7 @@ const Services = forwardRef((props, ref) => {
                 </svg>
               </div>
               <h3>Comunidade Exclusiva</h3>
-              <p>Acesso a uma rede de traders experientes e mentorias personalizadas.</p>
+              <p>Acesso a uma rede de traders experientes e mentorias personalizadas às suas dificuldades.</p>
               <a href="#pricing" className="btn btn-primary">Saiba Mais</a>
             </div>
           </Reveal>

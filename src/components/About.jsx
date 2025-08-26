@@ -9,8 +9,7 @@ const About = forwardRef((props, ref) => {
           <header className="section-head">
             <h2>Quem somos</h2>
             <p>
-              Somos uma mesa de análise e comunidade focada em performance. Combinamos dados, 
-              disciplina e gestão de risco para entregar decisões mais inteligentes no mercado.
+              Fundo de gestão de Capital Próprio e Financiado. Focados em performance utilizamos o SMART MONEY CONCEPT para potencializar resultados, com uma gestão de risco equilibrada, um operacional potente e ambiente que prepara e desenvolve traders para alcançar sua consistência lucrativa no mercado.
             </p>
           </header>
         </Reveal>
@@ -51,7 +50,7 @@ const About = forwardRef((props, ref) => {
                 </svg>
               </div>
               <h3>Comunidade</h3>
-              <p>Networking exclusivo, mentorias personalizadas e um ambiente colaborativo para acelerar resultados.</p>
+              <p>Networking exclusivo, mentorias personalizadas e um ambiente colaborativo para acelerar os seus resultados.</p>
             </div>
           </Reveal>
         </div>
@@ -60,7 +59,7 @@ const About = forwardRef((props, ref) => {
         <Reveal>
           <div className="about-cta">
             <h3>Pronto para Começar?</h3>
-            <p>Junte-se à nossa comunidade e transforme sua jornada no trading</p>
+            <p>Junte-se à nós e transforme sua jornada no trading</p>
             <div className="about-cta-buttons">
               <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow">
                 QUERO FAZER PARTE

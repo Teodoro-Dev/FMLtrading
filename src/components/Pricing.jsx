@@ -136,18 +136,6 @@ const Pricing = forwardRef((props, ref) => {
                   <p>Possibilidade de ganhos superiores a mil dólares em todas as contas após aprovação</p>
                 </div>
               </div>
-              
-              <div className="benefit-item">
-                <div className="benefit-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div className="benefit-content">
-                  <h4>Aprovação em menos de um trimestre</h4>
-                  <p>Processo acelerado para começar a lucrar rapidamente</p>
-                </div>
-              </div>
             </div>
           </div>
         </Reveal>

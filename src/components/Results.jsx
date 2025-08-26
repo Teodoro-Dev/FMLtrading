@@ -36,8 +36,8 @@ const Results = forwardRef((props, ref) => {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>500+</h3>
-              <p>Traders aprovados em mesas funded</p>
+              <h3>100+</h3>
+              <p>Contas aprovadas em mesas funded</p>
             </div>
           </Reveal>
           
@@ -48,7 +48,7 @@ const Results = forwardRef((props, ref) => {
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>85%</h3>
+              <h3>80%</h3>
               <p>Taxa de aprovação média</p>
             </div>
           </Reveal>
@@ -63,8 +63,8 @@ const Results = forwardRef((props, ref) => {
                   <path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h3>5+</h3>
-              <p>Anos de experiência no mercado</p>
+              <h3>20+</h3>
+              <p>Anos de experiência no mercado combinada entre membros</p>
             </div>
           </Reveal>
           

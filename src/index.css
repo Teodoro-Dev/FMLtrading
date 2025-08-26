@@ -653,11 +653,8 @@ html {
 
 .hero-inner {
   text-align: center;
-  z-index: 2;
-  position: relative;
   max-width: 800px;
   padding: 0 24px;
-  margin: 0 auto; /* garantir centralização horizontal do bloco */
 }
 
 .hero-logo {
@@ -1049,6 +1046,7 @@ html {
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto 3rem;
+  align-items: stretch; /* Força todos os cards a terem a mesma altura */
 }
 
 .funded-card {
@@ -1058,6 +1056,9 @@ html {
   padding: 2rem;
   box-shadow: var(--glow);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Garante que o card ocupe toda a altura disponível */
 }
 
 .funded-header {
@@ -1066,6 +1067,7 @@ html {
   justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+  flex-shrink: 0; /* Impede que o header encolha */
 }
 
 /* Corrigir margem herdada do .icon-circle quando usado no header funded */
@@ -1085,6 +1087,8 @@ html {
   margin: 0;
   display: grid;
   gap: 1rem;
+  flex-grow: 1; /* Permite que a lista cresça para preencher o espaço disponível */
+  align-content: start; /* Alinha os itens no topo da área disponível */
 }
 
 .funded-item {
@@ -1125,6 +1129,22 @@ html {
 
 .funded-cta {
   margin-top: 1.25rem;
+  flex-shrink: 0; /* Impede que o CTA encolha */
+}
+
+/* Estilo para o badge "Mais Popular" se não existir ainda */
+.featured-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: var(--accent);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* Comparison Table */

@@ -6,8 +6,7 @@ const Hero = forwardRef((props, ref) => {
   const [isDeleting, setIsDeleting] = useState(false)
 
   const texts = [
-    'Inteligência de mercado, sinais assertivos e uma comunidade que acelera sua evolução no trading.',
-    'Análise técnica avançada, gestão de risco profissional e resultados consistentes.',
+    'Análises assertivas.',
     'Junte-se à comunidade que transforma traders iniciantes em profissionais do mercado.'
   ]
 
