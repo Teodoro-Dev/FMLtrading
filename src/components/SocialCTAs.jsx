@@ -7,7 +7,7 @@ const SocialCTAs = forwardRef((props, ref) => {
       <div className="container">
         <Reveal>
           <header className="section-head">
-            <h2>Contactos</h2>
+            <h2>CONTACTOS</h2>
             <p>
               Ligue-se às nossas plataformas oficiais.
             </p>

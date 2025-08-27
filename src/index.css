@@ -651,11 +651,7 @@ html {
   z-index: 1;
 }
 
-.hero-inner {
-  text-align: center;
-  max-width: 800px;
-  padding: 0 24px;
-}
+.hero-inner { text-align: center; z-index: 2; position: relative; max-width: 800px; padding: 0 24px; margin: 0 auto; /* garantir centralização horizontal do bloco */ }
 
 .hero-logo {
   width: 120px;
@@ -665,6 +661,12 @@ html {
   margin: 0 auto 2rem;
   box-shadow: var(--glow-strong);
   animation: heroLogoFloat 3s ease-in-out infinite;
+  display: block;
+  object-position: center 50%; /* move a imagem 10% para baixo dentro do círculo */
+  
+  position: relative;
+  z-index: 70; /* traz para a frente */
+  filter: brightness(1.1) contrast(1.1); /* destaca a imagem */
 }
 
 @keyframes heroLogoFloat {

@@ -37,7 +37,7 @@ const Results = forwardRef((props, ref) => {
                 </svg>
               </div>
               <h3>100+</h3>
-              <p>Contas aprovadas em mesas funded</p>
+              <p>Contas aprovadas</p>
             </div>
           </Reveal>
           
@@ -64,7 +64,7 @@ const Results = forwardRef((props, ref) => {
                 </svg>
               </div>
               <h3>20+</h3>
-              <p>Anos de experiência no mercado combinada entre membros</p>
+              <p>Anos de experiência</p>
             </div>
           </Reveal>
           
