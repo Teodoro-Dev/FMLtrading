@@ -7,7 +7,7 @@ const SocialCTAs = forwardRef((props, ref) => {
       <div className="container">
         <Reveal>
           <header className="section-head">
-            <h2>CONTACTOS</h2>
+            <h2>CONTATOS</h2>
             <p>
               Ligue-se às nossas plataformas oficiais.
             </p>
@@ -39,7 +39,7 @@ const SocialCTAs = forwardRef((props, ref) => {
               </div>
               <h3>FML - Trading & Network</h3>
               <p>Servidor da comunidade (Discord)</p>
-              <a href="#" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/3xcQey64RQ" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 Entrar na Comunidade
               </a>
             </div>
@@ -87,7 +87,7 @@ const SocialCTAs = forwardRef((props, ref) => {
               </div>
               <h3>Email</h3>
               <p>Escreva-nos por e-mail</p>
-              <a href="mailto:contato@fmltrading.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:fml.investi@gmail.com" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Enviar Email
               </a>
             </div>
@@ -99,10 +99,10 @@ const SocialCTAs = forwardRef((props, ref) => {
             <h3>Quer transformar a sua vida?</h3>
             <p>A metodologia FML já transformou centenas de traders em profissionais lucrativos. Sua hora de brilhar chegou, não deixe essa oportunidade passar.</p>
             <div className="contact-cta-buttons">
-              <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/3xcQey64RQ" className="btn btn-primary btn-glow" target="_blank" rel="noopener noreferrer">
                 SEJA MEMBRO FML AGORA
               </a>
-              <a href="mailto:contato@fmltrading.com" className="btn btn-secondary">
+              <a href="https://t.me/feelpsfx" className="btn btn-secondary">
                 FALAR COM ESPECIALISTA
               </a>
             </div>

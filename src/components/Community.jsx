@@ -76,7 +76,7 @@ const Community = forwardRef((props, ref) => {
                 construa relacionamentos valiosos na indústria financeira.
               </p>
               <ul className="community-features">
-                <li>Grupos VIP no Telegram</li>
+                <li>Chat privado no discord</li>
                 <li>Eventos exclusivos</li>
                 <li>Networking com profissionais</li>
                 <li>Compartilhamento de oportunidades</li>
@@ -90,11 +90,8 @@ const Community = forwardRef((props, ref) => {
             <h3>Pronto para se juntar à nossa comunidade?</h3>
             <p>Comece sua jornada de sucesso no trading hoje mesmo</p>
             <div className="community-cta-buttons">
-              <a href="https://t.me/feelpsfx" className="btn btn-primary btn-glow">
+              <a href="https://discord.gg/3xcQey64RQ" className="btn btn-primary btn-glow">
                 ENTRAR NA COMUNIDADE FML
-              </a>
-              <a href="#pricing" className="btn btn-secondary">
-                VER PLANOS
               </a>
             </div>
           </div>
